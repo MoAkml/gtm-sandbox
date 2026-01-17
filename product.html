@@ -1,1 +1,22 @@
 
+<h1>Product A</h1>
+<p>$29.99</p>
+<button id="addToCart">Add to Cart</button>
+
+<script>
+document.getElementById("addToCart").onclick = function () {
+  window.dataLayer.push({
+    event: "add_to_cart",
+    ecommerce: {
+      currency: "USD",
+      value: 29.99,
+      items: [{
+        item_id: "sku_001",
+        item_name: "Product A",
+        price: 29.99,
+        quantity: 1
+      }]
+    }
+  });
+};
+</script>
