@@ -1,1 +1,19 @@
 
+<h1>Thank You</h1>
+
+<script>
+window.dataLayer.push({
+  event: "purchase",
+  ecommerce: {
+    transaction_id: "T12345",
+    value: 29.99,
+    currency: "USD",
+    items: [{
+      item_id: "sku_001",
+      item_name: "Product A",
+      price: 29.99,
+      quantity: 1
+    }]
+  }
+});
+</script>
