@@ -1,1 +1,14 @@
 
+<form id="contactForm">
+  <input type="text" required placeholder="Name">
+  <input type="email" required placeholder="Email">
+  <button type="submit">Send</button>
+</form>
+
+<script>
+document.getElementById("contactForm").onsubmit = function(e){
+  e.preventDefault();
+  window.dataLayer.push({ event: "contact_form_submit" });
+  alert("Form submitted");
+};
+</script>
